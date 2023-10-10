@@ -1,6 +1,6 @@
 import React from "react";
 
-const Skills = () => {
+export const Skill = () => {
   return (
     <section id="skills" className="flex container skills">
       <h2 className="title">My Skills</h2>
@@ -19,5 +19,3 @@ const Skills = () => {
     </section>
   );
 };
-
-export default Skills;

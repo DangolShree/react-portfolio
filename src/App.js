@@ -1,11 +1,11 @@
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Info from "./components/Info";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Works from "./components/Works";
+import HeroSection from "./component/HeroSection";
+import { Route, Routes } from "react-router-dom";
+import { Skill } from "./component/Skill";
+import { Infos } from "./component/Infos";
+import { Nav } from "./component/Nav";
+import { Projects } from "./component/Projects";
+import { About } from "./component/About";
 
 function App() {
   return (
@@ -15,15 +15,19 @@ function App() {
         <label htmlFor="darkMode" className="dark-mode-toggle">
           <i className="fa-solid fa-circle-half-stroke"></i>
         </label>
-        <Navbar />
+        <Nav />
         <Routes>
-          <Route path="/" element={<hero />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/" element={<Skill />} />
+          <Route path="/" element={<Infos />} />
+          <Route path="/" element={<Projects />} />
+          <Route path="/" element={<About />} />
+          {/* <Route path="/skills" element={<Skills />} />
           <Route path="/skills" element={<Hero />} />
           <Route path="/skills" element={<Info />} />
           <Route path="/skills" element={<Works />} />
           <Route path="/skills" element={<About />} />
-          <Route path="/skills" element={<Contact />} />
+          <Route path="/skills" element={<Contact />} /> */}
         </Routes>
       </div>
     </>

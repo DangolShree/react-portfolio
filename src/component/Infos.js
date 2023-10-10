@@ -1,6 +1,8 @@
-const Info = () => {
+import React from "react";
+
+export const Infos = () => {
   return (
-    <Section className="flex container banner">
+    <section className="flex container banner">
       <div className="info-content flex">
         <div className="icon-container flex">
           <i className="fa-solid fa-ribbon"></i>
@@ -36,7 +38,6 @@ const Info = () => {
           <p>Experience</p>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
-export default Info;
