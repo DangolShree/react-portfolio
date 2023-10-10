@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.flex .nav-left {
+  position: relative;
   align-items: center;
+}
+
+.line::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  left: 37%;
+  position: absolute;
+  background: yellow;
+}
+
+:root {
+  --color-orange: #ff5c00;
+  --color-dark: #;
+}
+
+/* NAVBAR */
+
+.left {
+  grid-area: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: ;
 }
 
-.App-link {
-  color: #61dafb;
+.right {
+  grid-area: right;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Info Section */
+
+.banner {
+  margin-top: 7rem;
+  border: 2px solid var(--border-color);
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .info-divider {
+  background
+} */
+
+.skills > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: Wrap;
+}
+
+.skills > div i {
+  font-size: 5rem;
 }
